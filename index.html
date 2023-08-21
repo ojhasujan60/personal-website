@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sujan Ojha - Personal Website</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujan Ojha - Personal Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <div class="header-content">
+  <header class="container">
+    <div class="header-content text-center">
       <h1>Sujan Ojha</h1>
       <p>IT Professional</p>
     </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#goals">Goals</a></li>
-	  <li><a href="#activity">Activity</a></li>
-	  <li><a href="#contact">Contact</a></li>
+  <nav class="container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+      <li class="nav-item"><a class="nav-link" href="#activity">Activity</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
   </nav>
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I am a highly motivated and adaptable individual with a strong passion for technology and problem-solving. Throughout my career as an IT Support Specialist, I have developed a diverse skill set that allows me to effectively address technical challenges while maintaining a keen focus on customer satisfaction. I thrive in dynamic environments where I can leverage my excellent communication skills to collaborate with colleagues and clients, ensuring that IT solutions align with business needs.
-
-<br>I take pride in my ability to analyze complex issues and break them down into actionable steps, enabling me to provide efficient and effective solutions. With a solid foundation in systems, hardware, and networking, I'm confident in my capacity to handle a wide range of technical tasks. Additionally, my experience as a Team Leader has honed my leadership abilities, enabling me to guide and mentor colleagues to achieve their full potential.
-
-<br>Beyond my technical expertise, I'm known for my attention to detail, which helps ensure that projects are executed flawlessly. I believe in continuous learning and staying up-to-date with industry trends, allowing me to contribute innovative ideas and strategies to any team I'm a part of. Overall, I'm dedicated to contributing my skills and enthusiasm to a collaborative work environment, where I can make a meaningful impact and drive the success of IT projects</p>
-    </section>
-    <section id="goals" class="section">
-      <h2>Goals</h2>
-      <p>In my current role as an IT Support Specialist at ActiveIT, I'm dedicated to elevating my skill set and making a significant impact on strategic IT initiatives. With a focus on enhancing my technical proficiency in cloud technologies, cybersecurity, and emerging trends, I aim to contribute proactively to larger IT projects aligned with our company's strategic objectives. I plan to achieve this by pursuing continuous learning through courses and certifications, collaborating with experienced team members, and actively proposing process improvements and innovative solutions. Ultimately, I envision becoming a more versatile IT Support Engineer, capable of driving operational efficiency and contributing to our organization's overall success.</p>
-    </section>
-    <section id="activity" class="section">
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>I am an IT professional with over 5 years of experience in the industry. I specialize in software development,
+      web design, and IT consulting. I have worked with a variety of clients, from small startups to large corporations,
+      and have a proven track record of delivering high-quality solutions on time and within budget. In my free time, I
+      enjoy coding, reading, and traveling.</p>
+  </section>
+  <section id="goals" class="section container">
+    <h2>Goals</h2>
+    <p>My main goal is to continue growing as a professional and to take on new and challenging projects. I am always
+      looking to learn new technologies and to improve my skills. I also aim to give back to the community by mentoring
+      young professionals and contributing to open-source projects.</p>
+  </section>
+  <section id="activity" class="section container">
     <h2>YouTube Video</h2>
     <div class="video-container">
-        <iframe width="640" height="440" src="https://youtube.com/shorts/CKI6BYz26cs" frameborder="0S" allowfullscreen> </iframe>
+      <iframe width="640" height="440" src="https://www.youtube.com/embed/CKI6BYz26cs" frameborder="0"
+        allowfullscreen></iframe>
     </div>
-    </section>
-    <section id="contact" class="section">
-     <h2>Contact</h2>
-	 <p>Feel free to get in touch with me for any inquiries, opportunities, or collaborations. I'm always open to connecting with fellow professionals, clients, and individuals who share a passion for technology and IT innovation.<br>
-
-<br>Email: ojhasujan60@gmail.com<br>
-    Phone: 0452 651 239<br>
-
-<br>You can also find me on LinkedIn, where I share insights, industry updates, and engage in discussions related to IT and networking. Looking forward to connecting with you.<br>
-    
-	
-	<a href="mailto:ojhasujan60@gmail.com" class="email-button">Email Me</a>
-    <a href="sujan_resume.pdf" download class="download-button">Download Resume</a>
-   </section>
-  <footer>
-    <p>&copy; 2023 Sujanojha</p>
-   <button class="scroll-top-button" id="scroll-top-button" onclick="scrollToTop()">Scroll to Top</button>
-   <script src="script.js"></script>
+  </section>
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <p>If you would like to get in touch with me, you can email me at <a
+        href="mailto:sujan.ojha@example.com">sujan.ojha@example.com</a> or follow me on <a
+        href="https://twitter.com/sujanojha">Twitter</a>.</p>
+  </section>
+  <footer class="container text-center">
+    <p>© 2023 by Sujan Ojha. Proudly created with <a href="https://www.wix.com/">Wix.com</a></p>
   </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
