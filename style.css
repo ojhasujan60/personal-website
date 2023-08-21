@@ -1,0 +1,114 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Global styles */
+body {
+  background-image: url("PY.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:black;
+  /* Other styles */
+}
+
+/* Center-align the header content */
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 4rem 0;
+  color:black;
+}
+
+header-content {
+  margin-top: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 0;
+  text-align: center;
+  color:black;
+  
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+/* Main content styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+/* Email button styles */
+.section {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.email-button, .download-button {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity and color as needed */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Scroll-to-top button styles */
+scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+scroll-top-button:hover {
+  background-color: #555;
+}
