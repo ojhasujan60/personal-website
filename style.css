@@ -18,6 +18,7 @@ header {
     padding: 60px 0;
     text-align: center;
 }
+
 header img {
     max-width: 150px;
     margin-bottom: 20px;
@@ -77,17 +78,6 @@ nav .nav-link:hover {
     width: 100%;
     height: 100%;
 }
-.email-button, .download-button {
-  background-color: #555;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
 
 /* Footer styles */
 footer {
@@ -106,54 +96,23 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* Responsive styles start here */
-
-/* For tablets and smaller screens */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .container {
-        padding: 15px;
+    /* Center-align the header elements for better visual on tablets and mobile */
+    header .col-md-3, header .col-md-9 {
+        text-align: center;
     }
 
-    header {
-        padding: 40px 0;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .section {
-        padding: 30px 0;
-    }
-
-    .section h2 {
-        font-size: 1.8em;
-    }
-
-    .section p {
-        font-size: 1em;
+    /* Adjust buttons for better touch access */
+    .email-button, .download-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
     }
 }
 
-/* For mobile phones and smaller screens */
 @media (max-width: 576px) {
-    header {
-        padding: 20px 0;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    .section {
-        padding: 20px 0;
-    }
-
-    .section h2 {
-        font-size: 1.5em;
-    }
-
-    .section p {
-        margin-bottom: 15px;
-    }
+    /* Adjustments for very small devices, if necessary */
 }
