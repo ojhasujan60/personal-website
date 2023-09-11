@@ -18,6 +18,18 @@ header {
     padding: 60px 0;
     text-align: center;
 }
+.sticky-top-container {
+    position: -webkit-sticky;  /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* Ensures the block stays on top of other content */
+    background-color: #343a40; /* Ensures the background remains consistent when scrolling */
+}
+nav.container {
+    background-color: #ededed;  /* Or whatever color you prefer */
+}
+
+
 
 header img {
     max-width: 150px;
@@ -25,8 +37,13 @@ header img {
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.8em;          /* Slightly increased font size */
+    font-weight: 300;          /* Lighter font weight, which can look clean and modern */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    letter-spacing: 2px;       /* Spaces out the letters a bit */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    margin-bottom: 20px;       /* Adjusted margin for better spacing */
+    color: #ffffff; 
 }
 
 /* Navigation styles */
@@ -52,9 +69,13 @@ nav .nav-link:hover {
 }
 
 .section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 2.2em;          /* Adjusted font size */
+    font-weight: 600;          /* Bold but not too heavy */
+    text-transform: uppercase; /* Converts text to uppercase */
+    letter-spacing: 1.5px;     /* Spaces out the letters */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    margin-bottom: 25px;       /* Adjusted margin for better spacing */
+    color: #343a40;  
 }
 
 .section p {
@@ -96,6 +117,37 @@ footer a:hover {
     text-decoration: none;
 }
 
+.email-button, .download-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px 5px; /* Adjusted for spacing between buttons */
+    font-size: 1em;
+    background-color: #007bff; /* Bootstrap's primary blue */
+    color: #ffffff; /* White text color */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none; /* Removes the underline from the links */
+    border: none; /* Remove any default border */
+    cursor: pointer; /* Cursor will change to a hand on hover */
+}
+
+.email-button:hover, .download-button:hover {
+    background-color: #0056b3; /* A darker blue for hover */
+    transform: translateY(-2px); /* Provides a slight upward motion when hovered */
+    color: #ffffff;
+}
+
+.email-button:active, .download-button:active {
+    transform: translateY(1px); /* Provides a slight downward motion when pressed */
+}
+
+/* Center buttons on larger screens */
+@media (min-width: 992px) {
+    #contact {
+        text-align: center;
+    }
+}
+/* Responsive styles */
 /* Responsive styles */
 @media (max-width: 768px) {
     /* Center-align the header elements for better visual on tablets and mobile */
@@ -105,11 +157,31 @@ footer a:hover {
 
     /* Adjust buttons for better touch access */
     .email-button, .download-button {
-        display: block;
-        width: 100%;
+        display: inline-block;
+        padding: 10px 20px;
         margin: 10px 0;
-        padding: 10px;
+        font-size: 1em;
+        background-color: #007bff; /* Bootstrap's primary blue */
+        color: #ffffff; /* White text color */
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        text-decoration: none; /* Removes the underline from the links */
         text-align: center;
+    }
+    .email-button:hover, .download-button:hover {
+        background-color: #0056b3; /* A darker blue for hover */
+        transform: translateY(-2px); /* Provides a slight upward motion when hovered */
+        color: #ffffff;;
+    }
+    
+    .email-button:active, .download-button:active {
+        transform: translateY(1px); /* Provides a slight downward motion when pressed */
+    }
+
+    /* Add padding to the left and right for the content on smaller screens */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
