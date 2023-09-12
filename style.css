@@ -15,7 +15,7 @@ body, h1, h2, p {
 header {
     background-color: #343a40; /* Bootstrap's dark gray */
     color: #ffffff; /* White text */
-    padding: 40px 0;
+    padding: 60px 0;
     text-align: center;
 }
 .sticky-top-container {
@@ -149,7 +149,7 @@ footer a:hover {
 }
 /* Responsive styles */
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     /* Center-align the header elements for better visual on tablets and mobile */
     header .col-md-3, header .col-md-9 {
         text-align: center;
