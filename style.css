@@ -20,21 +20,12 @@ header {
     text-align: center;
 }
 
-.photo {
+.Photo {
     background-image: url('Cover Photo.jpg');
     background-size: cover;
     background-position: center center;
-    /* Other photo styles go here */
-    hheight: 300px; /* Adjust the height as needed */
+    
 }
-In this CSS code, we've set the background-image property for both the .header and .photo elements. You should replace 'header-background.jpg' and 'your-photo.jpg' with the actual file names of your header background image and photo, respectively.
-
-This way, both the header and the photo will have the same background image, and you can adjust the height and other styles as needed to achieve the desired appearance.
-
-
-
-
-
 
 .sticky-top-container {
     position: -webkit-sticky;  /* For Safari */
