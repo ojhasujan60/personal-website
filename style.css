@@ -22,7 +22,7 @@ header {
     position: -webkit-sticky;  /* For Safari */
     position: sticky;
     top: 0;
-    z-index: 500;  /* Ensures the block stays on top of other content */
+    z-index: 1000;  /* Ensures the block stays on top of other content */
     background-color: #343a40; /* Ensures the background remains consistent when scrolling */
 }
 nav.container {
