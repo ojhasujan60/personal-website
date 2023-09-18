@@ -28,11 +28,14 @@ header {
 }
 
 .sticky-top-container {
-    position: -webkit-sticky;  /* For Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1000;  /* Ensures the block stays on top of other content */
-    background-color: #343a40; /* Ensures the background remains consistent when scrolling */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #343a40;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Adjust this as needed */
 }
 nav.container {
     background-color: #ededed;  /* Or whatever color you prefer */
