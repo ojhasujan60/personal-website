@@ -14,14 +14,14 @@ body, h1, h2, p {
 /* Header styles */
 header {
     background-color: #343a40; /* Bootstrap's dark gray */
-    background-image: url('Cover Photo.jpg');
+    background-image: url('STOPCover Photo.jpg');
     color: #ffffff; /* White text */
     padding: 60px 0;
     text-align: center;
 }
 
 .Photo {
-    background-image: url('STOPCover Photo.jpg');
+    background-image: url('Cover Photo.jpg');
     background-size: cover;
     background-position: center center;
     
